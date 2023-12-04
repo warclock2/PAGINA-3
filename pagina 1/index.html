@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>PedidosYa - Delivery en Huancayo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>PedidosYa</h1>
+    <img src="logo.png" alt="Logotipo de PedidosYa">
+  </header>
+  <main>
+    <section class="menu">
+      <h2>Restaurantes</h2>
+      <ul>
+        <li><a href="#">Hamburguesas</a></li>
+        <li><a href="#">Pizzas</a></li>
+        <li><a href="#">Comida china</a></li>
+        <li><a href="#">Comida peruana</a></li>
+      </ul>
+    </section>
+    <section class="pedido">
+      <h2>Realiza tu pedido</h2>
+      <form action="pedido.php" method="post">
+        <input type="text" name="nombre" placeholder="Nombre">
+        <input type="text" name="direccion" placeholder="Dirección">
+        <input type="tel" name="telefono" placeholder="Teléfono">
+        <select name="restaurante">
+          <option value="1">Hamburguesería El Buen Sabor</option>
+          <option value="2">Pizza Hut</option>
+          <option value="3">Comida China La Gran Muralla</option>
+          <option value="4">Comida Peruana El Huarique</option>
+        </select>
+        <input type="submit" value="Realizar pedido">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright © 2023 PedidosYa</p>
+  </footer>
+</body>
+</html>
